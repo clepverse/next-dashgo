@@ -16,13 +16,13 @@ export function Sidebar() {
             GERAL
           </Text>
           <Stack spacing="4" mt="8" align="stretch">
-            <Link display="flex">
+            <Link display="flex" align="flex-start">
               <Icon as={RiDashboardLine} fontSize="20" />
               <Text ml="4" fontWeight="medium">
                 Dashboard
               </Text>
             </Link>
-            <Link display="flex">
+            <Link display="flex" align="flex-start">
               <Icon as={RiContactsLine} fontSize="20" />
               <Text ml="4" fontWeight="medium">
                 Usuários
@@ -36,13 +36,13 @@ export function Sidebar() {
             AUTOMAÇÃO
           </Text>
           <Stack spacing="4" mt="8" align="stretch">
-            <Link display="flex">
+            <Link display="flex" align="flex-start">
               <Icon as={RiInputMethodLine} fontSize="20" />
               <Text ml="4" fontWeight="medium">
                 Formulários
               </Text>
             </Link>
-            <Link display="flex">
+            <Link display="flex" align="flex-start">
               <Icon as={RiGitMergeLine} fontSize="20" />
               <Text ml="4" fontWeight="medium">
                 Automação
