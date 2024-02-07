@@ -34,10 +34,13 @@ export function Pagination({
   const nextPages =
     currentPage < lastPage
       ? generatePagesArray(
-          currentPage,
-          Math.min(currentPage + siblingsCount, lastPage),
-        )
+        currentPage,
+        Math.min(currentPage + siblingsCount, lastPage),
+      )
       : [];
+
+  const firstRegister = (currentPage - 1) * registerPerPage + 1;
+  const lastRegister = Math.min(currentPage * registerPerPage, totalCountOfRegisters);
 
   return (
     <Stack
@@ -48,7 +51,7 @@ export function Pagination({
       spacing="6"
     >
       <Box>
-        <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
+        <strong>{firstRegister}</strong> - <strong>{lastRegister}</strong> de <strong>{totalCountOfRegisters}</strong>
       </Box>
       <Stack direction="row" spacing="2">
         {currentPage > 1 + siblingsCount && (

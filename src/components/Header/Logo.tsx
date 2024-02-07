@@ -8,10 +8,11 @@ export function Logo() {
       letterSpacing="tight"
       w="64"
     >
-      dashgo
+      clep
       <Text as="span" ml="1" color="pink.500">
         .
       </Text>
+      verse
     </Text>
   );
 }

@@ -48,7 +48,9 @@ export default function UserList() {
         staleTime: 1000 * 60 * 10,
       },
     );
-  }
+  };
+
+  // console.log({ data });
 
   return (
     <Box>
@@ -122,8 +124,7 @@ export default function UserList() {
                             </Text>
                           </Box>
                         </Td>
-                        {isWideVersion && <Td>{user.createdAt}</Td>}
-
+                        {isWideVersion && <Td>{user.created_at}</Td>}
                         <Td>
                           <Button
                             as="a"
